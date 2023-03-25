@@ -1,0 +1,476 @@
+spring:
+  shardingsphere:
+    sharding:
+      tables:
+        fms_pool_ar_warehouse:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_stock:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_packing_material:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_extra:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_warehouse:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_stock:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_packing_material:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_extra:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_collection:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_extra:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_packing_material:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_stock:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_warehouse:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_collection:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_extra:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_packing_material:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_stock:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_warehouse:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_branch:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_trunk:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_branch:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_pool_ar_trunk:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_branch:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_trunk:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_branch:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_cal_result_ar_trunk:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_report_cal_ar_comparison:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_info:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_info:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_pool_ar_props:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_result_ar_props:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_express_abnormal_los:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #以下是 2.0 接口表按货主分库失效，默认查4个库，性能受到很大影响
+        bms_bl_ar_freight:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_allot_in:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_allot_in_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_allot_out:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_allot_out_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_express_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_express_item_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_increment_services:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_increment_services_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_more_in:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_more_in_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_more_out:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_more_out_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_order_deliver:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_order_deliver_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_order_sign:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_purchase_in:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_purchase_in_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_purchase_ret:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_purchase_ret_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_ration_out:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_ration_out_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_recheck_cancel:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_recheck_cancel_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_sale_ret:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_sale_ret_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_untread_check:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_untread_check_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_wholesale_out:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_bl_wholesale_out_dtl:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_pool_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_pool_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_pool_ar_branch:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_pool_warehouse:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_report_ar_cal:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ap_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_warehouse_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_stock_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_packing_material_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_extra_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_express_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_branch_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        bms_result_ar_trunk_snapshot:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_warehouse:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_stock:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_packing_material:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_extra:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_express:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_branch:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_trunk:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_info:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+        fms_import_ar_props:
+          database-strategy:
+            standard:
+              sharding-column: owner_no
+              precise-algorithm-class-name: com.lesoon.petrel.sharding.algorithm.DefaultFieldShardPreciseAlgorithm
+      broadcast-tables: fms_cal_ar_comparison_relation,bms_config_lx_shop_power,bms_express_pool_config,bms_packing_material_pool_config,bms_warehouse_pool_config
